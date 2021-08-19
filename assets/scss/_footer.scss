@@ -1,4 +1,6 @@
-
+body{
+	background: black;
+}
 
 .footer {
 	margin-top: auto;
@@ -8,6 +10,7 @@
 	a{
 		color: white;
 	}
+
 	a:hover{
 		color: $main-color;
 	}
