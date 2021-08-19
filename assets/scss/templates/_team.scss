@@ -1,0 +1,32 @@
+.team{
+  .team__main{
+    .person{
+      border-bottom: 2px solid lightgrey;
+      padding-bottom: 10px;
+      .person__image{
+
+        img{
+          border-radius: 50%;
+          width: 150px;
+        }
+      }
+      .person__content{
+        h6{
+          color: $main-color;
+        }
+      }
+    }
+    .person:first-child{
+      border-top: 2px solid lightgrey;
+      padding-top: 10px;
+    }
+  }
+}
+
+
+
+@include breakpoint(small down){
+  .person{
+    text-align: center;
+  }
+}

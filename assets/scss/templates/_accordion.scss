@@ -1,0 +1,101 @@
+
+.accordion-section{
+  h4{
+    color: $main-color;
+  }
+}
+ul.accordion-list {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0;
+  list-style: none;
+  background-color: #f9f9fA;
+
+  li {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #FFF;
+    margin: 0 auto 10px;
+
+    cursor: pointer;
+    .question{
+      background: $main-color;
+      padding: 10px;
+      color: #fafafa;
+      border-radius: 8px;
+      &:hover{
+        background: $hover-color;
+      }
+
+    }
+
+    &.active {
+      border: 2px solid $main-color;
+      border-radius: 8px;
+
+      .question{
+        background: white;
+        color: $text-color;
+      }
+      h5 {
+        &:after {
+          content: '\f057';
+          font-family: $fa;
+          color: $main-color;
+
+        }
+      }
+    }
+
+    h5 {
+      font-weight: 700;
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 0 15px 0 0;
+      margin: 0;
+      font-size: 15px;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      line-height: 25px;
+
+      &:after {
+        content: '\f107';
+        font-family: $fa;
+        font-style: normal;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: all 0.3s ease-in-out;
+        font-size: 18px;
+      }
+    }
+
+    div.answer {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      cursor: pointer;
+      padding: 10px;
+      p {
+        position: relative;
+        display: block;
+        font-weight: 300;
+        padding: 10px 0 0 0;
+        cursor: pointer;
+        line-height: 150%;
+        margin: 0 0 15px 0;
+        font-size: 14px;
+        color: #888888;
+      }
+    }
+  }
+}

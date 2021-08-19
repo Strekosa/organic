@@ -1,0 +1,60 @@
+/* ---------------------------------------
+	TMPL: Default
+--------------------------------------- */
+
+.elementor-icon-box-wrapper{
+  display: flex;
+  align-items: center;
+}
+.elementor-icon-box-content{
+  display: flex;
+  align-items: center;
+  p{
+    margin-bottom: 0;
+    a:hover{
+      color: $main-color;
+    }
+  }
+
+}
+.elementor-icon-box-title{
+  order: 1;
+  margin-left: 10px;
+
+}
+
+.elementor-column, .elementor-column-wrap {
+  justify-content: flex-end;
+  @include breakpoint(small down) {
+    justify-content: center;
+  }
+}
+
+
+.elementor-widget-container{
+  @include breakpoint(medium down){
+    text-align: center;}
+}
+
+
+
+@include breakpoint(medium down){
+
+}
+
+
+@include breakpoint(small down) {
+  .elementor-widget-wrap .elementor-element-populated{
+    padding: 0;
+  }
+  .elementor-icon-box-icon{
+
+    margin-bottom: 0;
+    margin-right: 10px;
+
+  }
+  .elementor-post{
+    flex-direction: column;
+
+  }
+}

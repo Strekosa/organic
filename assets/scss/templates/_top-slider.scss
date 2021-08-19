@@ -1,0 +1,40 @@
+.wide{
+  height: 600px; /*define the height of slide*/
+}
+.narrow{
+  height: 450px; /*define the height of slide*/
+}
+.top-slide {
+  width: 100%;
+  transition: height 0.3s ease;
+  background-size: cover;
+  background-position: 80% 0%;
+  @include breakpoint(medium down) {
+    height: 400px;
+  }
+
+  @include breakpoint(small down) {
+    height: 300px;
+  }
+}
+
+.top-slide__inner {
+  position: relative;
+  height: 100%;
+
+  @extend %bgcover;
+}
+.top-slide__caption {
+  max-width: 1100px;
+  position: absolute;
+  transform: translate(0%, -50%);
+  top: 53%;
+ text-align: center;
+  color: white;
+  font-size: 30px;
+  h2{
+    font-size: 90px;
+    font-weight: lighter;
+  }
+
+}

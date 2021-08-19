@@ -1,0 +1,23 @@
+.score{
+  padding: 100px 0;
+  background-color: $main-color;
+  color: white;
+  .count{
+    text-align: center;
+    p{
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .count__main{
+      .count__one{
+
+      }
+      .count__one:not(:last-child){
+        border-right: 1px solid white;
+        @include breakpoint(medium down){
+          border-right: none;
+        }
+      }
+    }
+  }
+}

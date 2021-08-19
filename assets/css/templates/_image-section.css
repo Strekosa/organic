@@ -1,0 +1,11 @@
+.image-section {
+  height: 500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  .image-section .image-section__text {
+    color: white;
+    text-align: center;
+    width: 100%; }

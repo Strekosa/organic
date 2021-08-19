@@ -1,0 +1,43 @@
+.image-text{
+  position: relative;
+  padding: 100px 0;
+  .image-text__main{
+    .image-text__img{
+      padding: 15px;
+      img{
+        border-radius: 7px 7px 7px 7px;
+      }
+    }
+    .image-text__text{
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      h4{
+        text-transform: uppercase;
+      }
+    }
+  }
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .3;
+    .fixed &{
+      background-attachment: fixed;
+    }
+    .scroll &{
+      background-attachment: scroll;
+    }
+  }
+
+}
+
+.position-right{
+  order: 1;
+}
+.position-left{
+  order: -1;
+}
