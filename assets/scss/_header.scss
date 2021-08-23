@@ -5,6 +5,9 @@ header{
 	width: 100%;
 	background: rgba(0, 0, 0, 0.5);
 	padding: 20px 0;
+	@include breakpoint(small down){
+		padding: 20px 0 0 ;
+	}
 }
 
 .logo {
@@ -107,10 +110,13 @@ header{
 		}
 	}
 		.is-accordion-submenu{
+
 			li{
 				background-color: white;
+				padding: 10px 0;
 				a{
 					color: $text-color;
+					line-height: 25px;
 				}
 			}
 			li:hover{
@@ -182,6 +188,7 @@ header{
 			&.has-dropdown {
 				> a {
 					/* Style of item with dropdown */
+
 				}
 			}
 
@@ -228,6 +235,7 @@ header{
 					line-height: 30px;
 					border-radius: 7px;
 					position: relative;
+
 					&:hover {
 						/* Dropdown link on hover */
 						background: lightgrey;

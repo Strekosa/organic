@@ -20,6 +20,7 @@ if( have_rows('flexible_content') ):
         elseif( get_row_layout() == 'brand_slider' ):
             get_template_part('parts/flex/brand-slider');
 
+
         elseif( get_row_layout() == 'image-text' ):
             get_template_part('parts/flex/image-text');
 
@@ -66,6 +67,9 @@ if( have_rows('flexible_content') ):
         elseif( get_row_layout() == 'double_slider' ):
             get_template_part('parts/flex/double-slider');
 
+        elseif( get_row_layout() == 'contact_form' ):
+            get_template_part('parts/flex/contact-form');
+
         endif;
 
         // End loop.
@@ -75,3 +79,6 @@ if( have_rows('flexible_content') ):
 else :
     // Do something...
 endif;
+?>
+
+

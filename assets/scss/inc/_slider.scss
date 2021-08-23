@@ -88,10 +88,11 @@
 			font-size: 20px;
 		}
 		position: absolute;
-
+		left: 10px;
 	}
 	.slick-next {
 		position: absolute;
+		right: 10px;
 		//background: url(../images/right_arrow.png) 50% 50% no-repeat;
 
 		&::before {

@@ -1,3 +1,4 @@
+
 <section class="brand-slider-section">
     <div class="grid-container">
         <?php if ( have_rows( 'brand_slider' ) ):?>

@@ -213,6 +213,20 @@
 			} );
 		});
 
+        //ToTop button
+		var btn = $('#toTop');
+		jQuery(window).scroll(function() {
+			if ($(window).scrollTop() > 300) {
+				btn.addClass('show');
+			} else {
+				btn.removeClass('show');
+			}
+		});
+
+		btn.on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({scrollTop:0}, '600');
+		});
 
 
 
@@ -228,6 +242,7 @@
 			infinite: true,
 			slidesToShow: 4,
 			slidesToScroll: 1,
+			arrows: false,
 			dots: false,
 			responsive: [
 				{

@@ -1479,6 +1479,32 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_61236b98a7a6b": {
+                    "key": "layout_61236b98a7a6b",
+                    "name": "contact_form",
+                    "label": "Contact form",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_61236bc4a7a6c",
+                            "label": "Contact form",
+                            "name": "contact_form",
+                            "type": "gf_field",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "allow_null": 0,
+                            "allow_multiple": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -1510,5 +1536,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1628874220
+    "modified": 1629711395
 }

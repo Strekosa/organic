@@ -245,39 +245,79 @@ button, .button, input[type='submit'], input[type='reset'], input[type='button']
 		background: $hover-color;
 	}
 }
+//
+//#toTop {
+//	text-decoration: none;
+//	position: fixed;
+//	bottom: 80px;
+//	right: 0;
+//	overflow: hidden;
+//	width: 58px;
+//	height: 58px;
+//	z-index: 999;
+//	text-align: center;
+//	border-radius: 50%;
+//	color: black;
+//	background-color: $main-color;
+//}
+//#toTop:before {
+//	font-family: 'Font Awesome 5 Free';
+//	font-weight: normal;
+//	font-style: normal;
+//	display: inline-block;
+//	line-height: 1;
+//	text-transform: none;
+//	letter-spacing: normal;
+//	word-wrap: normal;
+//	white-space: nowrap;
+//	direction: ltr;
+//	-webkit-font-smoothing: antialiased;
+//	-moz-osx-font-smoothing: grayscale;
+//	-webkit-font-feature-settings: 'liga';
+//	font-feature-settings: 'liga';
+//	font-size: 40px;
+//	font-weight: 600;
+//	line-height: 58px;
+//	content: "\f106";
+//}
 
-#toTop {
-	text-decoration: none;
-	position: fixed;
-	bottom: 80px;
-	right: 0;
-	overflow: hidden;
-	width: 58px;
-	height: 58px;
-	z-index: 999;
+
+
+
+
+
+#toTop  {
+	display: inline-block;
+	background-color: $main-color;
+	width: 50px;
+	height: 50px;
 	text-align: center;
 	border-radius: 50%;
-	color: black;
-	background-color: $main-color;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color 1s,
+	opacity 1s, visibility 1s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+
 }
-#toTop:before {
-	font-family: 'Font Awesome 5 Free';
-	font-weight: normal;
+#toTop::after {
+	content: "\f077";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 700;
 	font-style: normal;
-	display: inline-block;
-	line-height: 1;
-	text-transform: none;
-	letter-spacing: normal;
-	word-wrap: normal;
-	white-space: nowrap;
-	direction: ltr;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-feature-settings: 'liga';
-	font-feature-settings: 'liga';
-	font-size: 40px;
-	font-weight: 600;
-	line-height: 58px;
-	content: "\f106";
+	font-size: 25px;
+	line-height: 50px;
+	color: #fff;
+}
+#toTop:hover {
+	cursor: pointer;
+	background-color: $hover-color;
+}
+#toTop.show {
+	opacity: 1;
+	visibility: visible;
 }
 

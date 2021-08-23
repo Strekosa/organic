@@ -68,9 +68,13 @@
 @include breakpoint(small down) {
 	.footer__main{
 		text-align: center;
+		.footer__logo {
+			padding-right: 0px;
+		}
 		.footer-menu{
 			column-count: 3 !important;
 			margin: 20px 0 !important;
+			padding-left: 0!important;
 		}
 	}
 }

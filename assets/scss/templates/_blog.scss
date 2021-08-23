@@ -17,6 +17,7 @@
 }
 
 .preview__thumb {
+	width: 100%;
 	@include breakpoint(small down) {
 		margin-bottom: 20px;
 	}
@@ -28,10 +29,10 @@
 	margin-bottom: 10px;
 }
 .posts-slider__item-link{
-	@include breakpoint(small down) {
-		display: flex;
-		justify-content: center;
-	}
+	//@include breakpoint(small down) {
+	//	display: flex;
+	//	justify-content: center;
+	//}
 }
 
 /* ---------------------------------------

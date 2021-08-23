@@ -9,6 +9,9 @@
   }
   .testimonial{
     padding: 0 100px;
+    @include breakpoint(small down) {
+      padding: 0 20px;
+    }
     .slick-arrow{
       background-color: white;
     }
@@ -31,6 +34,9 @@
             position:relative;
             border-left: none;
             margin-right: 10px;
+            @include breakpoint(small down) {
+              padding: 0 30px 0 0;
+            }
           }
           blockquote p:before{
             position: absolute;
@@ -40,7 +46,9 @@
             color: #73AE1F;
             font-family: "Font Awesome 5 Free";
             font-size: 50px;
-
+            @include breakpoint(small down) {
+              font-size: 30px;
+            }
           }
         }
       }
